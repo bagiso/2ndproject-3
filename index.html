@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>추억의 잡동사니 키트</title>
+
+	<style type="text/css">
+		@font-face {
+font-family: 'UhBeepuding';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+	 	html{scroll-behavior: smooth;}
+		body,ul,li,ol,p,h1,h2,h3,h4,section,header{margin:0px; padding:0px;}
+		nav{background: #ffd02c; height: 80px; position: fixed; width: 100%;} /*앞에 nav 붙여주면 이 코드  복붙해도 간섭이없다. */
+
+			nav ul{ width:600px; height:80px; float: right; margin-right:40px; font-family: UhBeepuding; font-size:1.5em; font-weight: bold;}
+			nav ul li{ list-style-type: none; width:20%; height:80px; float:left; text-align: center; line-height:80px; }
+			nav a{display:block; color:#0a6f6a; text-decoration: none;}
+				nav a:hover{background: #03bccd; box-shadow:none; color: white; 
+	    	    transition: all 1s;}	
+			nav .logo{font-family: UhBeepuding; font-size:1.5em;height:80px; line-height: 80px; width: 300px; float: left; text-align: center; margin-left:30px; color:#00646c; font-weight: bold;}
+
+		section{background:red; }
+		::selection {background-color: #fe58a4; color: white;}
+
+		.flex{display: flex;}
+
+		.row{width:1500px; margin:auto;  text-align: center; display:flex;  padding-top:100px; }
+		.row2{height:900px;}
+		.row3{height:900px;}
+		.row-header{width:1500px; height:1000px; margin:auto; text-align: center; padding-top:150px; }
+		.padding{padding-top:150px; padding-bottom:150px;}
+
+		.col {width:490px; background:white;  margin-left:20px;}
+		.col2 {width:790px;  }
+		.col3 {width:490px;   margin-left:20px;}
+		.col-header {width:290px; margin: 0px 5px;  margin-top:50px;margin-left:35px; }
+		.col-header2 {width:450px; margin: 0px 10px; padding-left: 50px; margin-top:20px; }
+		.col6 {width:1490px; margin: 0px 5px; }
+
+
+		.bg-none{background:none;}
+		.bg-mint{background:#03bcce;}
+		.bg-yellow{background:#ffe178;}
+		.bg-all{background:url('122.jpg'); background-size: 100% auto;  }
+		.bg-1{background:url('6.jpg'); background-size: 100% auto; background-position: 0px -50px; }
+		.bg-2{background:url('2.jpg'); background-size: 100% auto;  background-position: 0px -20px;}
+		.bg-3{background:url('42.jpg'); background-size: 100% auto;  background-position: 0px -50px; }
+		.bg-pink{background:#fe58a4;}
+		.bg-yellow2{background:#ffd02c;}
+		.bg-white{background:white;}
+		.bg-header{background: url('background.jpg'); background-size: 100% auto; }
+
+		img{width:100%;}
+		.title{width:90%}
+		.img-square{width:490px; height:490px;}
+		.img-header{width:270px; height:270px;  border:3px solid #09979f; border-radius: 3px }
+		.img-shadow{box-shadow: 5px 5px 5px rgba(255,255,255,1);}
+		.img-cont{width:1200px; margin-bottom: 70px;}
+
+
+        /*폰트*/
+
+		h1{width:400px; text-align: left; font-family: 'Noto Sans KR', sans-serif; font-weight:900; font-size:1.2em; color:#00646c; line-height: 27px; margin-bottom: 10px; }
+		.small{ font-family: UhBeepuding; font-weight: normal; font-size: 1.2em; color:white; margin-bottom: 20px; }
+		h2{ text-align: center; font-family: Recipekorea; font-size:1.0em; color:#00646c; }
+		h3{ text-align: center; font-family: UhBeepuding; font-weight:normal; font-size:1.7em; color:#00646c; padding-top:150px;  letter-spacing:1px; }
+		.red{color: #00646c; margin: auto; font-size:2em; font-weight:bold;}
+		
+		h4{ text-align: center; font-family: UhBeepuding; font-weight:bold; font-size:1.7em; color:#00646c; padding-top: 20px; padding-bottom: 20px; letter-spacing:1px; }
+		.texttitle{color:white;  font-size:4.5em; font-weight:bold;text-align: left; padding-top: 450px; padding-left: 300px; }
+		.cont{color:white; line-height: 1.5; font-family: 'Noto Sans KR', sans-serif; font-weight:500; font-size:1.2em; text-align: left;padding-top: 50px; padding-left: 300px;  line-height: 2;}
+
+		p{font-family: 'Noto Sans KR', sans-serif; font-weight:500; font-size:1.0em; color:#00646c; text-align: left; margin-top: 20px; margin-left: 30px; line-height: 2;}
+		
+		.big{font-size:1.8em; font-weight:800;margin-top: 150px; }
+		.big2{font-size:1.2em; font-weight:800; color:0a6f6a; text-align: center; margin-right: 30px;}
+		.small2{font-size:1.0em; font-weight:400; color:0a6f6a;  margin-bottom: 130px;  text-align: center; margin-right: 30px;}
+		.m{margin-left: 100px; }
+		.list{line-height: 1.5; margin-left: 150px; margin-bottom: 60px;}
+		.list2{line-height: 1.5; margin-left: 110px;}
+
+		mark{color: #ffd02c; background-color:#09979f;}       
+
+		/*헤더구성*/
+
+		hr{border:0px; height:2px; background-color:#09979f; }
+		select {width: 415px; padding: .4em .1em; font-family: inherit;  
+        border: 1px solid #999; border-radius: 0px;  margin-bottom: 20px;}
+
+        button{ font-family: Recipekorea; font-weight:bold; font-size: 1em;  display:inline-block; background: #ffd02c; width: 190px; height: 50px; margin:10px; text-align: center; line-height: 50px; text-decoration: none;  color:#00646c; border-radius: 5px; border:2px solid #09979f; }
+        button:hover {background: #d3a307; transition: all 0.5s; }
+        /*푸터*/
+
+        footer{margin:auto; background: #03bccd; height: 400px; text-align: center; font-weight: 700; padding-top:100px;}
+        .top{width:100px; margin: auto; background: #ffd02c; width: 100px; height: 50px; line-height:55px; border-radius: 30px;border:2px solid #09979f; margin-bottom: 30px;}
+
+
+		/*컨테이너 두개짜서 풀배경채우기*/ 
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			추억의 잡동사니 키트 ღ'ᴗ'ღ
+		</div>
+	<ul>
+		<li><a href="#a1">구매하기</a></li>
+		<li><a href="#a2">키트정보</a></li>
+		<li><a href="#a3">키트상세</a></li>
+		<li><a href="#a4">하단</a></li>
+	</ul>
+</nav>
+
+	<header class="bg-header">
+	<div class="row-header" id="a1">
+		<div class="col6 bg-none">
+		<img class="title" src="title.png">
+		</div>
+		<div class="flex">
+		 <div class="col-header"><img class="img-header" src="5.jpg"></div>
+        <div class="col-header"><img class="img-header" src="1-1.jpg"></div>
+        <div class="col-header"><img class="img-header" src="3.jpg"> </div>
+
+         <div class="col-header2">
+         <h1>반복되는 일상 속에서 지루함을 느꼈다면, <br>과거로 잠깐 여행을 떠나보는 건 어떤가요? </h1>
+	     <h1 class="small">추억의 잡동사니 키트는 어린 시절 짝꿍과 갖고 놀았던 <br> 잡동사니들로 구성되어, 짝궁과 함께 
+	     <br>추억을 떠올리며 즐길 수 있는 키트입니다. </h1> <hr><br>
+
+	      <select>
+	    <option selected>잡동사니 키트 옵션</option>
+        <option>교환일기 SET</option>
+        <option>불량식품 SET</option>
+        <option>장난감 SET</option>
+        </select>
+
+        <button>장바구니</button>
+		<button>구매하기</button>
+        </div>
+	
+
+	</div>
+	</header>
+
+
+<section class="bg-navy">
+	
+</section>
+
+<section class="bg-all">
+
+<div class="row2">
+			<h3><br><br><br>하루하루 일때문에 피곤한 일상을 보내는 당신. <br> 어른이 되었지만 여전히 마음 한구석에는 동심이 남아있지 않나요? </h3>
+       <h3 class="red">"추억의 잡동사니 키트와 함께 추억여행을 떠나보세요!"</h3>
+    </div>
+</section>
+
+<section class="bg-yellow" id="a2"> 
+	<div class="row">
+<div class="col2">
+			<p class="big m"><mark>&nbsp소중한 추억 꺼내보기&nbsp</mark></p>
+			<p class="m">추억의 잡동사니 키트에는 지난 시절이 깃들어 있습니다. <br> 키트를 통해 어릴적 향수와 동시에 순수함을 느끼고,<br>옛날 잡동사니들을 재발견하는 시간을 가져보세요! </p></div>
+		<div class="col2"><img src="12.png"></div>
+		
+		</div>
+</section>
+<section class="bg-yellow" id="a2"> 
+	<div class="row">
+
+		<div class="col2"><img src="18.png"></div>
+		<div class="col2">
+			<p class="big m"><mark>&nbsp짝궁과 함께하는 키트&nbsp</mark></p>
+			<p class="m">추억을 회상할 땐 혼자보단 둘이 더 재밌는 법! <br> 세상에 둘도 없는 짝궁에게 특별한 경험을 선물해 보는 건 어떨까요? <br>'추억의 잡동사니 키트'는 짝궁과 함께 즐길 수 있는 잡동사니들로 가득하답니다! </p></div>
+		</div>
+</section>
+
+
+<section class="bg-yellow" id="a2"> 
+	<h3 class="red">추억의 잡동사니 키트는 총 세가지 세트로 구성되어 있습니다. </h3>
+	<div class="row padding">
+        <div class="col"><img class="img-square" src="5.jpg"><br><h4>교환일기 SET </h4><p class="list"> ■ 키티 비밀 다이어리 x1  <br> ■ 스티커 세트 x1  <br> ■ 무지개 블럭 색연필 x2  <br> ■ 야광 볼펜 세트 x1  <br> ■ 쉿, 비밀펜 x2 </p>   </div>
+        <div class="col"><img class="img-square" src="1-1.jpg"><h4>불량식품 SET</h4><p class="list2"> ■ 맛기차콘 x4  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ■ 차카니 x2  <br> ■ 감자알칩 x2  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ■ 달고나 x1  <br> ■ 옥수수 브이콘 x2  &nbsp&nbsp&nbsp■ 추억의 쫀드기 x2 <br> ■ 돌아온 아폴로 x2  &nbsp&nbsp&nbsp■ 뼈다귀 사탕 x2 <br>■ 별사탕 x2  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp■ 꾀돌이 x2</p></div>
+
+        <div class="col"><img class="img-square" src="3.jpg"><h4>장난감 SET</h4><p class="list"> ■ 레인보우 실뜨기 x2  <br> ■ 무지개 스프링 x2  <br> ■ 추억의 공기 x2  <br> ■ 인체 무해 칼라 풍선 x2 </p> </div>
+    </div>
+</section>
+
+<section class="bg-1" id="a3"> 
+	<div class="row3">
+        <div class="col6"><h4 class="texttitle">교환일기 SET </h4> <h4 class="cont">진정한 우정을 위해 짝궁과 교환일기를 써보세요! <br>잠금 기능이 있는 다이어리와 비밀펜으로  <br>둘만의 비밀 이야기를 나눌 수 있습니다.  <br>그 시절 많이 사용했던 야광펜과 스티커로 교환일기를 예쁘게 꾸며보세요!</h4></div>
+
+    </div>
+</section>
+
+<section class="bg-mint">
+	<div class="row">
+        <div class="col6"><img class="img-cont" src="7.jpg">
+        <img class="img-cont" src="82.jpg">
+    <img class="img-cont" src="9.jpg">
+        <img class="img-cont" src="1.gif">
+        <h4>불빛을 비추면 글씨가 나타나요! 너무 신기하다!<br><br><br> </h4>
+</div>
+    </div>
+</section>
+
+
+<section class="bg-2"> 
+	<div class="row3">
+        <div class="col6"><h4 class="texttitle">불량식품 SET </h4> <h4 class="cont">교실 뒷자리에서 몰래 나눠먹던 불량식품 세트! <br>추억의 잡동사니 키트에서 만나보세요. <br>깨물어 먹는 맛이 있는 아폴로에서 짭조름한 차카니까지! <br>변함없는 그때 그 맛 그대로입니다.   </h4></div>
+
+    </div>
+</section>
+
+<section class="bg-pink">
+	<div class="row">
+        <div class="col6">
+        	<img class="img-cont" src="11.jpg">
+        <img class="img-cont" src="142.jpg">
+    <img class="img-cont" src="15.jpg">
+    <img class="img-cont" src="13.jpg">
+</div>
+    </div>
+</section>
+
+<section class="bg-3"> 
+	<div class="row3">
+        <div class="col6"><h4 class="texttitle">장난감 SET </h4> <h4 class="cont">손이 심심할때~ 짝꿍과 함께 가볍게 공기를 즐겨보세요!
+ <br>매점 간식내기를 했던 그때처럼 색다른 내기를 해봐도 좋아요.<br>혼자하면 섭섭한 공기와 실뜨기를 함께 즐길 수 있어요!</h4></div>
+
+    </div>
+</section>
+
+<section class="bg-yellow">
+	<div class="row">
+        <div class="col6"><img class="img-cont" src="16.jpg">
+        <img class="img-cont" src="17.jpg">
+                <img class="img-cont" src="18.jpg">
+</div>
+    </div>
+</section>
+
+<section class="bg-yellow2">
+	<div class="row">
+<div class="col3"><p class="big2">BANK</p>
+<br><p class="small2">
+<br>
+국민은행<br>
+437-12-341524</p></div>
+<div class="col3">
+	<p class="big2">ADDRESS</p>
+<br><p class="small2">
+
+
+<br>
+서울특별시 노원구 공릉동 <br>
+서울과학기술대학교</p></div>
+
+<div class="col3">
+	<p class="big2">SNS</p>
+<p class="small2">
+INSTAGRAM
+<br>
+@pmix0w
+<br><br>
+EMAIL
+<br>
+psmile98@naver.com</p></div>
+
+</div>
+</section>
+
+<footer id="a4">
+	<div class="top" style="cursor:pointer;" onclick="window.scrollTo(0,0);"><h2>▲ TOP</h2></div>
+<h2 class="small">대표자 : 박미소<br>연락처 : 010-6616-0385<br><br> Copyright 2020. Bagiso all rights reserved.</h2>
+
+
+</body>
+</html>
